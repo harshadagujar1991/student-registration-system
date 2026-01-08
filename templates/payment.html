@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment</title>
+</head>
+<body>
+  <h2>Payment for Student</h2>
+  <p><strong>Name:</strong> {{ student.Name }}</p>
+  <p><strong>Email:</strong> {{ student.Email }}</p>
+  <p><strong>Department ID:</strong> {{ student.Dept_ID }}</p>
+
+  <form method="post">
+    <label for="amount">Amount:</label>
+    <input type="number" name="amount" step="0.01" required><br><br>
+
+    <button type="submit">Pay & Download Invoice</button>
+  </form>
+</body>
+</html>

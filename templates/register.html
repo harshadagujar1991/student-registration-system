@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration</title>
+</head>
+<body>
+  <h2>Student Registration Form</h2>
+  <form method="post">
+    <label for="name">Name:</label>
+    <input type="text" name="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email"><br><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" name="dob"><br><br>
+
+    <label for="dept_id">Department:</label>
+    <select name="dept_id" required>
+      {% for d in depts %}
+        <option value="{{ d.Dept_ID }}">{{ d.Dept_Name }}</option>
+      {% endfor %}
+    </select><br><br>
+
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
