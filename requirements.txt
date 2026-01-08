@@ -1,41 +1,5 @@
-blinker==1.9.0
-brotlipy @ file:///Users/runner/miniforge3/conda-bld/brotlipy_1666764759924/work
-certifi==2022.12.7
-cffi @ file:///Users/runner/miniforge3/conda-bld/cffi_1671179893800/work
-charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1678108872112/work
-click==8.3.1
-colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1666700638685/work
-conda==23.1.0
-conda-package-handling @ file:///home/conda/feedstock_root/build_artifacts/conda-package-handling_1669907009957/work
-conda_package_streaming @ file:///home/conda/feedstock_root/build_artifacts/conda-package-streaming_1669733752472/work
-cryptography @ file:///Users/runner/miniforge3/conda-bld/cryptography-split_1679811336455/work
-defusedxml==0.7.1
 Flask==3.1.2
 Flask-SQLAlchemy==3.1.1
-fonttools==4.61.1
-fpdf2==2.8.5
-idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1663625384323/work
-itsdangerous==2.2.0
-Jinja2==3.1.6
-MarkupSafe==3.0.3
-mysql-connector==2.2.9
-mysql-connector-python==8.1.0
-pillow==12.0.0
-pluggy @ file:///home/conda/feedstock_root/build_artifacts/pluggy_1667232663820/work
-protobuf==4.21.12
-pycosat @ file:///Users/runner/miniforge3/conda-bld/pycosat_1666836623787/work
-pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1636257122734/work
 PyMySQL==1.1.2
-pyOpenSSL @ file:///home/conda/feedstock_root/build_artifacts/pyopenssl_1680037383858/work
-PySocks @ file:///home/conda/feedstock_root/build_artifacts/pysocks_1661604839144/work
-reportlab==4.4.7
-requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1680286922386/work
-ruamel.yaml @ file:///Users/runner/miniforge3/conda-bld/ruamel.yaml_1678273098088/work
-ruamel.yaml.clib @ file:///Users/runner/miniforge3/conda-bld/ruamel.yaml.clib_1670412881259/work
-SQLAlchemy==2.0.45
-toolz @ file:///home/conda/feedstock_root/build_artifacts/toolz_1657485559105/work
-tqdm @ file:///home/conda/feedstock_root/build_artifacts/tqdm_1677948868469/work
-typing_extensions==4.15.0
-urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1678635778344/work
-Werkzeug==3.1.4
-zstandard==0.19.0
+fpdf2==2.8.5
+gunicorn==21.2.0
