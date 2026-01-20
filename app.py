@@ -6,6 +6,9 @@ from flask import Flask, render_template, request, redirect, url_for, send_file
 from models import db, Student, Department, Payment   # import models
 from invoice_generator import generate_invoice        # import invoice logic
 import datetime
+import os
+
+
 
 app = Flask(__name__)
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:password@localhost/studentdb'
@@ -13,6 +16,8 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:Admin%401234@local
 
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI')
 
 db.init_app(app)
 
