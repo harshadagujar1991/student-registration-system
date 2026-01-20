@@ -12,7 +12,9 @@ import os
 
 app = Flask(__name__)
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:password@localhost/studentdb'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:Admin%401234@localhost:3306/studentdb'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:Admin%401234@localhost:3306/studentdb'
+
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI')
 
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -103,3 +105,7 @@ if __name__ == '__main__':
         db.create_all()
         seed_departments()
     app.run(debug=True)
+
+#------------------------------------------------------------------------------------------------------------------------------
+#export SQLALCHEMY_DATABASE_URI="mysql+pymysql://root:AjDCrMtgfiuALEEitqHWxQXRzUPTDWVI@mainline.proxy.rlwy.net:16132/railway"
+#------------------------------------------------------------------------------------------------------------------------------
