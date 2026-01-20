@@ -4,3 +4,4 @@ fpdf2==2.8.5
 gunicorn==21.2.0
 PyMySQL==1.1.0
 SQLAlchemy==2.0.45
+cryptography==42.0.5
